@@ -7,7 +7,9 @@ In healthcare, multimodal machine learning combines data from several modalities
 # Datasets 
 * MIMIC-CXR 
     * MIMIC-CXR is a huge dataset of 227835 radiology text reports and 377110 chest X-ray images that is freely available where every sample is classified into 13 respiratory findings. 
-    * The images and radiology text reports are extracted and pre-processed. You can find the details [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/edit/main/README.md)
+    * The radiology text report extarction details can be found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/MIMIC-CXR/extractTextReportsMIMIC.ipynb)
+    * The image extraction details can be found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/MIMIC-CXR/extractImagesMIMIC.ipynb)
+    * Data pre-processing of extracted radiology text reports can be found [herehttps://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/MIMIC-CXR/MIMIC_textReports_Preprocessing.ipynb](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/MIMIC-CXR/MIMIC_textReports_Preprocessing.ipynb)
     * 22000 randomly sampled image-text pairs are used for training.
 
 * OpenI
