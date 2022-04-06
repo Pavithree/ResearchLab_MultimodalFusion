@@ -57,7 +57,7 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 ## Results
 
 * OpenI
- * VisualBERT's results (AUC) have improved by 1.21 percent, UNITER's results have improved by 1.24 percent, and LXMERT's results have remained unchanged with our proposed strategy.
+  * VisualBERT's results (AUC) have improved by 1.21 percent, UNITER's results have improved by 1.24 percent, and LXMERT's results have remained unchanged with our proposed strategy.
 
 * MIMIC-CXR
   * The results obtained by incorporating our proposed technique demonstrate a significant improvement with respect to precision, recall and AUC for MIMIC dataset.
