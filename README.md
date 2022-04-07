@@ -44,9 +44,9 @@ In healthcare, multimodal machine learning combines data from several modalities
   * [Doc2Vec](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/NLP/openI/OpenI_Doc2Vec.ipynb)
   * [Glove](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/NLP/openI/OpenI_GloVe_Attention.ipynb)
 
-##Image processing and feature extraction
+## Image processing and feature extraction
 * Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. We are using it in our application to extract features, boxes from the given X-ray image.
-  * [Detectron2] (https://github.com/airsplay/py-bottom-up-attention)
+  * [Detectron2](https://github.com/airsplay/py-bottom-up-attention)
 
 
 
@@ -55,7 +55,7 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 * Results obtained on OpenI dataset
   * [VisulBERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/openI/LateFusion_VisualBERT_OpenI.ipynb)
   * [UNITER+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/OpenI/LateFusionFinalOutput__UNITER_OpenI.ipynb)
-  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LateFusion_LXMERT_OpenI.ipynb) 
+  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/OpenI/LXMERT_OpenI_Testing.ipynb) 
 * Results obtained on MIMIC CXR dataset
   * [VisulBERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/MIMIC/LateFusion_VisualBERT_MIMIC.ipynb)
   * [UNITER+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/LateFusionFinalOutput__UNITER_MIMIC.ipynb)
