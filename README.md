@@ -31,11 +31,11 @@ In healthcare, multimodal machine learning combines data from several modalities
 
 * UNITER
   * UNITER implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/OpenI/UNITER_OpenI__Testing.ipynb)
-  * UNITER implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/UNITER_MIMIC__Testing.ipynb)
+  * UNITER implementation details on MIMIC dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/UNITER_MIMIC__Testing.ipynb)
 
 * LXMERT
   * LXMERT implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/OpenI/LXMERT_OpenI_Testing.ipynb)
-  * LXMERT implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LXMERT_MIMIC__Testing.ipynb)
+  * LXMERT implementation details on MIMIC dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LXMERT_MIMIC__Testing.ipynb)
 
 ## Natural Language Processing models
 
@@ -55,7 +55,7 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 * Results obtained on OpenI dataset
   * [VisulBERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/openI/LateFusion_VisualBERT_OpenI.ipynb)
   * [UNITER+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/OpenI/LateFusionFinalOutput__UNITER_OpenI.ipynb)
-  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/edit/main/README.md) 
+  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LateFusion_LXMERT_OpenI.ipynb) 
 * Results obtained on MIMIC CXR dataset
   * [VisulBERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/MIMIC/LateFusion_VisualBERT_MIMIC.ipynb)
   * [UNITER+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/LateFusionFinalOutput__UNITER_MIMIC.ipynb)
