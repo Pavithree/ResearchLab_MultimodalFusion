@@ -34,15 +34,21 @@ In healthcare, multimodal machine learning combines data from several modalities
   * UNITER implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/UNITER_MIMIC__Testing.ipynb)
 
 * LXMERT
-  * pending
+  * LXMERT implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/OpenI/LXMERT_OpenI_Testing.ipynb)
+  * LXMERT implementation details on openI dataset is found [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LXMERT_MIMIC__Testing.ipynb)
 
 ## Natural Language Processing models
 
 * Several word embedding models were run on openI dataset to choose the embedding which best suits our dataset. The combination of Glove word embedding with Bi-directional GRU and attension layer gave the best classification results The implementation details are found below
   * [BERT](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/NLP/openI/OpenI_BERT.ipynb) 
   * [Doc2Vec](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/NLP/openI/OpenI_Doc2Vec.ipynb)
-  * [Glove](https://github.com/Pavithree/ResearchLab_MultimodalFusion/edit/main/README.md)
-    
+  * [Glove](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/NLP/openI/OpenI_GloVe_Attention.ipynb)
+
+##Image processing and feature extraction
+* Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. We are using it in our application to extract features, boxes from the given X-ray image.
+  * [Detectron2] (https://github.com/airsplay/py-bottom-up-attention)
+
+
 
 ## Late Fusion
 Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER and predictions from corresponding NLP models were performed. The results can be found below
@@ -53,7 +59,7 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 * Results obtained on MIMIC CXR dataset
   * [VisulBERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/MIMIC/LateFusion_VisualBERT_MIMIC.ipynb)
   * [UNITER+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Uniter/MIMIC/LateFusionFinalOutput__UNITER_MIMIC.ipynb)
-  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/edit/main/README.md) 
+  * [LXMERT+NLP](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/LXMERT/MIMIC/LateFusion_LXMERT_MIMIC.ipynb) 
 
 ## Results
 
