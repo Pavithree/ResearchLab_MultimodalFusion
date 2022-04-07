@@ -19,6 +19,7 @@ In healthcare, multimodal machine learning combines data from several modalities
 
 ## Dependencies
   * Clone the git repository in your local system
+  * Python version : 3.8.10
   * Install the required dependencies using the command - pip install requirements.txt
       
 
