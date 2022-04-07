@@ -68,3 +68,9 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 
 * MIMIC-CXR
   * The results obtained by incorporating our proposed technique demonstrate a significant improvement with respect to precision, recall and AUC for MIMIC dataset.
+
+## References
+
+1. Yikuan Li, Hanyin Wang, and Yuan Luo. “A comparison of pre-trained vision-and-language models for
+multimodal representation learning across medical images and reports”. In: 2020 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE.
+2020, pp. 1999–2004.
