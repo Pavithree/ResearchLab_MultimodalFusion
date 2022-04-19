@@ -63,7 +63,7 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 
 
 ## Pipeline
-Pipeline model is a google-colab [notebook](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Pipeline/VBERT_ATTN_GLOVE_GRU_COLAB_FOR_MIMIC.ipynb) contains Detectron2, NLP and VisuakBERT along with the latefusion code using the saved models. It takes the test x-ray image and corresponding clinical report as input and generate the final predictions. All resources used in the code can be found [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing).
+Pipeline model is a google-colab [notebook](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Pipeline/VBERT_ATTN_GLOVE_GRU_COLAB_FOR_MIMIC.ipynb) containing Detectron2, NLP and VisuakBERT along with the latefusion code using the saved models. It takes the test x-ray image and corresponding clinical report as input and generate the final predictions. All resources used in the code can be found [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing).
 
 ## Results
 
