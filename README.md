@@ -79,7 +79,7 @@ The User Interface(UI) for this entire project is built using python-django. The
 		* UnComment the code in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file from line number 20 till line number 146. This can also be located with comments ###### Start VisualBert Code ###### and ###### End VisualBert Code ######.
 		* Comment line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
 		* After successfully saving all the changes, open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
-* A Demo video of the UI can be found [here](https://drive.google.com/file/d/1jHpGqimRoNGKQ4-VTpXv3lLyHkX9SlFE/view?usp=sharing), if the link is broken please feel free to download the demo video from [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/tree/main/UI/demo)
+* A Demo video of the UI can be found [here](https://drive.google.com/file/d/1HB4z5ClQGp7DvrJEAgYXofi8OBoBB1Ke/view?usp=sharing), if the link is broken please feel free to download the demo video from [here](https://github.com/Pavithree/ResearchLab_MultimodalFusion/tree/main/UI/demo)
 
 ## Results
 
