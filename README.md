@@ -18,6 +18,7 @@ In healthcare, multimodal machine learning combines data from several modalities
 # Usage
 
 ## Dependencies
+  * GPU required for running VisualBERT, LXMERT and UNITER
   * Clone the git repository in your local system
   * Python version : 3.8.10
   * Install the required dependencies using the command - pip install requirements.txt
