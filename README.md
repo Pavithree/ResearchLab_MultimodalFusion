@@ -70,13 +70,15 @@ The User Interface(UI) for this entire project is built using python-django. The
 * Clone this repo to your local system
 * Install the requirements mentioned in the requirements.txt
 * Open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
-* Currently the UI is configured to run only using NLP model with manual updation of VisualBERT prediction at line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
-* To completely run the UI with all the models it requires 10 GPUs, if you have sufficient resources to support this run do the following
-	* Download the model VBertMIMIC.pt from [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing) and save it under UI/models/VBert folder.
-	* Replace the exact location of the model at line number 135 in variable name "VBERT_model" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
-	* UnComment the code in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file from line number 20 till line number 146. This can also be located with comments ###### Start VisualBert Code ###### and ###### End VisualBert Code ######.
-	* Comment line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
-	* After successfully saving all the changes, open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
+* CPU only machine
+	* Running UI entirely needs GPU support for visualBERT predictions. For CPU only machine, VisualBERT prediction is generated using [code](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/VisualBERT/MIMIC/VisualBERT_MIMIC__Testing.ipynb)  and added to the variable name "result_VBert" (at line number 203) in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+* GPU machine
+	* To completely run the UI with all the models it requires GPUs, if you have sufficient resources to support this run do the following
+		* Download the model VBertMIMIC.pt from [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing) and save it under UI/models/VBert folder.
+		* Replace the exact location of the model at line number 135 in variable name "VBERT_model" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+		* UnComment the code in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file from line number 20 till line number 146. This can also be located with comments ###### Start VisualBert Code ###### and ###### End VisualBert Code ######.
+		* Comment line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+		* After successfully saving all the changes, open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
 
 ## Results
 
