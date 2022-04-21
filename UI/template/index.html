@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+    <head>
+        <title>Respitory illness prediction</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="This page contains a web application which helps in predicting respitory illness based on image and text files.">
+        <meta name="keywords" content="">
+        <meta name="author" content="Team Lambda (Pavithree Shetty,Sudarshan Rai,Nisha Sharma,Shweta Mishra)">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+    </head>
+    <body>
+        <!--<div class="topnav">
+        <h2> Disease classification based on Chest X-rays and CT Scan images </h2>
+        </div>-->
+        <div class="header">
+        <h2>Multimodal Machine Learning for multi-class classification of detecting respiratory illness</h2>
+        <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        </div>
+        </div>
+     
+        <div class="content">
+        <h2>Uplaod Image and Text file for Classification</h2>
+        <form method="post" enctype="multipart/form-data" action="predictImage">
+            {% csrf_token %}
+                <div>
+                    <label for="fname">Upload Image File Here:</label> <input name="filePath" type="file" class="button"><br><br>
+                    <label for="fname">Upload Text File Here:</label> <input name="filePathText" type="file" class="button"><br><br>
+                    <br>
+                    <input class="button" type="submit" value="Submit" >
+                </div>
+            </div>
+            
+                <div class="content">
+                    <!--<h2>Prediction made by the model : {{predictedLabel}}</h2>-->
+                    <h2>You can find analysis in the graph below</h2>
+                </div>
+           
+            <div class="content">
+                <img src={{imageFilePathName}} alt='imagename' width=256 height=256>
+            </div>
+        
+        
+        </form>
+        <footer>
+            <div class="footer"> 
+                                   <p align="right">Copyright </br><img src="https://th.bing.com/th/id/R.1951e40a91abbb2bf4e83932c718963e?rik=TGDOkhnTocpJHQ&riu=http%3a%2f%2fcorg.hs-harz.de%2fimg%2fUni-Logo-2c.png&ehk=P7jIheroU8Tu8062xovfH61nRBG%2bV1WBv%2buwx0J%2fcf0%3d&risl=&pid=ImgRaw&r=0" width=250 height=40></p>
+                              </div>
+        </footer>
+</body>
+</html>
