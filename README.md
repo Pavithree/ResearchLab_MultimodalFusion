@@ -65,6 +65,19 @@ Late fusion of predictions from visual language models VisualBERT, LXMERT,UNITER
 ## Pipeline
 Pipeline model is a google-colab [notebook](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/notebooks/Pipeline/VBERT_ATTN_GLOVE_GRU_COLAB_FOR_MIMIC.ipynb) containing Detectron2, NLP and VisuakBERT along with the latefusion code using the saved models. It takes the test x-ray image and corresponding clinical report as input and generate the final predictions. All resources used in the code can be found [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing).
 
+## User Interface
+The User Interface(UI) for this entire project is built using python-django. The details for its usage can be found below
+* Clone this repo to your local system
+* Install the requirements mentioned in the requirements.txt
+* Open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
+* Currently the UI is configured to run only using NLP model with manual updation of VisualBERT prediction at line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+* To completely run the UI with all the models it requires 10 GPUs, if you have sufficient resources to support this run do the following
+	* Download the model VBertMIMIC.pt from [here](https://drive.google.com/drive/folders/13JBQAlcjhuNeVo_lWv-G6vuFk7RmaJMx?usp=sharing) and save it under UI/models/VBert folder.
+	* Replace the exact location of the model at line number 135 in variable name "VBERT_model" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+	* UnComment the code in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file from line number 20 till line number 146. This can also be located with comments ###### Start VisualBert Code ###### and ###### End VisualBert Code ######.
+	* Comment line number 203 in variable name "result_VBert" in [views.py](https://github.com/Pavithree/ResearchLab_MultimodalFusion/blob/main/UI/MultimodalClassifier/views.py) file.
+	* After successfully saving all the changes, open the command prompt and navigate to the project's UI folder using change directory command and run the following command "python manage.py runserver".
+
 ## Results
 
 * OpenI

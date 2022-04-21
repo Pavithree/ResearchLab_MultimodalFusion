@@ -186,11 +186,10 @@ def predictImage(request):
     testimage = '.'+imageFilePathName
     testText = '.'+textFilePathName
     img = image.load_img(testimage, target_size=(img_height,img_width))
-    
-    #os.chdir(textFilePathName)
+
     with open(testText) as f:
         report = f.readlines()
-    #report = "Heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. Vascular calcification is noted. No adenopathy is seen. 1. No evidence of active disease.."
+
     cleaned_report, cleaned_report_length = clean_text(report)
     report_seq=tokenizer.texts_to_sequences(cleaned_report)
     report_pad=pad_sequences(report_seq,maxlen=50)
@@ -200,6 +199,7 @@ def predictImage(request):
     result_NLP = model_NLP.predict(report_pad, batch_size=None, verbose=0, steps=None, callbacks=None, max_queue_size=10,workers=1, use_multiprocessing=False)
     
     #load the visual bert result
+    ## Comment this variable in case you are using visualBert model
     result_VBert = [7.4546150e-04, 5.3781793e-02, 2.7630964e-02, 2.7981797e-02, 2.4510680e-02,
                    1.1066774e-02, 6.5459244e-02, 9.6584296e-01, 2.7130239e-02, 3.0707447e-03,
                   7.0582358e-03, 3.1475675e-01, 7.1236943e-03]
@@ -229,17 +229,6 @@ def predictImage(request):
 
     probability_illness = list(y_pred.ravel())
 
-
-
-
-
-    #x= image.img_to_array(img)
-    #x=x/255
-    #x=x.reshape(1,img_height,img_width,3)
-    #with model_graph.as_default():
-    #    with tf_session.as_default():
-     #       predi= model.predict(x)
-
     fig = plt.figure()
     ax = fig.add_axes([0,0,1,1])
     diseases = X_labels
@@ -254,8 +243,5 @@ def predictImage(request):
     index, value = max(enumerate(result[0]), key=operator.itemgetter(1))
 
     label = X_labels[index]
-    #import numpy as np
-    #predictedLabel = X_labels[str(np.argmax(y_pred[0]))]
-
     context = {'imageFilePathName':imageFilePathName, 'textFilePathName': textFilePathName, 'predictedLabel': label}
     return render(request,'index.html',context)
