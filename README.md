@@ -90,6 +90,13 @@ The User Interface(UI) for this entire project is built using python-django. The
 * MIMIC-CXR
   * The results obtained by incorporating our proposed technique demonstrate a significant improvement with respect to precision, recall and AUC for MIMIC dataset.
 
+
+## Docker container
+
+* To download the docker container of this project please click [here](https://drive.google.com/file/d/1tHGVKKUocYIV5lkIYpxk-rij2dlulaWO/view?usp=sharing)
+* To mount this container navigate to the stored location and launch a command prompt and type command "docker load < multimodal.tar" to load the container.
+* Post loading build the conatiner using "docker build --build-arg SSH_KEY="$MY_KEY" --tag multimodal ." command.
+
 ## References
 
 1. Yikuan Li, Hanyin Wang, and Yuan Luo. “A comparison of pre-trained vision-and-language models for
